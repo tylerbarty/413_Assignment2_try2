@@ -1,0 +1,28 @@
+﻿<!-- I Tyler Bartholomew wrote this page and all the others as well-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link class='fas fa-chess' style='font-size:36px' />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="~/img/rocket.png">
+</head>
+<body>
+    <header>
+        <h1>@ViewBag.Header</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    @RenderBody()
+
+    <footer>Copyright Tyler Barty 2021</footer>
+
+</body>
+</html>
